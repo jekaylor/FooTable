@@ -61,6 +61,7 @@
 			p.createPages(ft, $tbody);
 			p.createNavigation(ft, $tbody);
 			p.fillPage(ft, $tbody, ft.pageInfo.currentPage);
+			ft.raise('footable_paged', { page: ft.pageInfo.currentPage });
 		};
 
 		p.createPages = function (ft, tbody) {
